@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WELCOM TO AYAN CALCULATOR PROJECT</title>
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: auto;
+    background-color: rgb(0, 0, 0);
+  }
+
+  .calculator {
+    display: grid;
+    padding: 8px;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 80vh;
+    width: 60vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+
+  }
+
+  .item {
+    /* color: rgb(255, 255, 255); */
+    background-color: rgb(50, 50, 50);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.4s ease-in;
+  }
+  .item:active{
+    color:  rgb(255, 235, 12);
+    box-shadow: 0 0 20px 1px rgb(2, 255, 242);
+    transition: transform 0.1s ease;
+    background: linear-gradient(45deg, #fceabb,  #f8b500);
+    transform: scaleX(1);   /* width double */
+    transform: scaleY(1)
+    
+    
+  }
+  h1:active{
+    color: rgb(22, 22, 22);
+  }
+
+  .inputt {
+    grid-column: 1;
+    grid-row-start: 1/4;
+    grid-column-end: 5;
+  }
+
+  .item.inputt input {
+    overflow: hidden;
+    height: 31vh;
+    width: 57.5vh;
+    text-align: right;
+    background: linear-gradient(45deg, #141E30,  #243B55);
+    font-size: 40px;
+    padding: 20px;
+
+
+    font-weight: bolder;
+    border-style: none;
+    border-color: none;
+
+    color: rgb(255, 255, 255);
+    text-shadow:  0px 0px 10px #ffffff;
+  }
+
+  .ayan1 {
+    grid-column: 1;
+    grid-row-start: 1/4;
+    grid-column-end: 4;
+    border-radius: 10px;
+    background-color: rgb(255, 0, 0);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .ayan2 {
+    display: flex;
+    grid-column: 4;
+    grid-column-end: 4;
+    border-radius: 10px;
+    background-color: rgb(254, 148, 18);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    align-content: center;
+    align-self: center;
+  }
+
+  .ayan3 {
+    grid-column: 3;
+    grid-column-end: 3;
+  }
+
+  .bt {
+    text-align: center;
+    justify-content: center;
+    margin-top: -10px;
+    font-size: xx-large;
+    width: 200px;
+    background: none;
+    border-style: none;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  .bt1 {
+    font-size: xx-large;
+    background: none;
+    border-style: none;
+    cursor: pointer;
+    color: white;
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+  }
+
+  </style>
+</head>
+<body>
+
+  <main>
+    <div class="container">
+      <div class="calculator">
+        <div class="item inputt">
+          <input class="ip" type="text">
+        </div>
+        <div class="item ayan1">
+          <div class="btn">
+            <button class="bt">
+              <h1>c</h1>
+            </button>
+          </div>
+        </div>
+        <div class="item ayan2">
+          <div class="btn">
+            <button class="bt1">
+              <h1>+</h1>
+            </button>
+          </div>
+        </div>
+        <div class="item ayan">
+          <div class="btn">
+            <button class="bt1">
+              <h1>1</h1>
+            </button>
+          </div>
+        </div>
+        <div class="item ayan">
+          <div class="btn">
+            <button class="bt1">
+              <h1>2</h1>
+            </button>
+          </div>
+        </div>
+        <div class="item ayan">
+          <div class="btn">
+            <button class="bt1">
+              <h1>3</h1>
+            </button>
+          </div>
+        </div>
+        <div class="item ayan2">
+          <div class="btn">
+            <button class="bt1">
+              <h1>-</h1>
+            </button>
+          </div>
+        </div>
+        <div class="item ayan">
+          <div class="btn">
+            <button class="bt1">
+              <h1>4</h1>
+            </button>
+          </div>
+        </div>
+        <div class="item ayan">
+          <div class="btn">
+            <button class="bt1">
+              <h1>5</h1>
+            </button>
+          </div>
+        </div>
+        <div class="item ayan">
+          <div class="btn">
+            <button class="bt1">
+              <h1>6</h1>
+            </button>
+          </div>
+        </div>
+        <div class="item ayan2">
+          <div class="btn">
+            <button class="bt1">
+              <h1>*</h1>
+            </button>
+          </div>
+        </div>
+        <div class="item ayan">
+          <div class="btn">
+            <button class="bt1">
+              <h1>7</h1>
+            </button>
+          </div>
+        </div>
+        <div class="item ayan">
+          <div class="btn">
+            <button class="bt1">
+              <h1>8</h1>
+            </button>
+          </div>
+        </div>
+        <div class="item ayan">
+          <div class="btn">
+            <button class="bt1">
+              <h1>9</h1>
+            </button>
+          </div>
+        </div>
+        <div class="item ayan2">
+          <div class="btn">
+            <button class="bt1">
+              <h1>/</h1>
+            </button>
+          </div>
+        </div>
+        <div class="item ayan">
+          <div class="btn">
+            <button class="bt1">
+              <h1>0</h1>
+            </button>
+          </div>
+        </div>
+        <div class="item ayan">
+          <div class="btn">
+            <button class="bt1">
+              <h1>.</h1>
+            </button>
+          </div>
+        </div>
+
+        <div class="item ayan2 ayan3">
+          <div class="btn">
+            <button class="bt1">
+              <h1>=</h1>
+            </button>
+          </div>
+        </div>
+        <div class="item ayan2">
+          <div class="btn">
+            <button class="bt1">
+              <h1 style="font-weight: lighter; font-size: 56px;">⌫</h1>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+<script>
+let input = document.querySelector("input");
+let buttons = document.querySelectorAll("button");
+
+buttons.forEach(btn => {
+  btn.addEventListener("click", () => {
+
+    let value = btn.innerText.trim();
+
+    if (value.toLowerCase() === "c") {
+      input.value = "";
+      return;
+    }
+
+    if (value === "=") {
+      try {
+        input.value = eval(input.value);
+      } catch {
+        input.value = "Error";
+      }
+      return;
+    }
+    if (value === "⌫") {
+      input.value = input.value.slice(0,-1);
+      return;
+    }
+
+    input.value += value;
+  });
+});
+
+
+</script>
+
+</html>
