@@ -1,7 +1,7 @@
 # 🔥Calculator Project
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=00F7FF&size=28&center=true&vCenter=true&width=600&lines=Welcome+to+Ayan+Calculator!;Modern+UI+Calculator;Built+with+HTML+CSS+JS;Smooth+Animations+%26+Effects" />
+  <img src="https://readme-typing-svg.herokuapp.com?color=00F7FF&size=28&center=true&vCenter=true&width=600&lines=Welcome+to+My+Calculator+App!;Modern+UI+Calculator;Built+with+HTML+CSS+JS;Smooth+Animations+%26+Effects" />
 </p>
 
 ---
